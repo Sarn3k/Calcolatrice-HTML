@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcolatrice</title>
+    <title>Calcolatrice HTML</title>
+    <p2>Il logaritmo usa solo il primo numero</p2>
 </head>
 <body>
     <div class="calculator">
@@ -24,16 +25,6 @@
             const num1 = parseFloat(document.getElementById('num1').value);
             const num2 = parseFloat(document.getElementById('num2').value);
             let result;
-
-            if (isNaN(num1) && operation !== 'log') {
-                document.getElementById('result').textContent = "Inserisci un valore valido per Numero 1.";
-                return;
-            }
-
-            if (isNaN(num2) && operation !== 'log') {
-                document.getElementById('result').textContent = "Inserisci un valore valido per Numero 2.";
-                return;
-            }
 
             switch (operation) {
                 case 'add':
